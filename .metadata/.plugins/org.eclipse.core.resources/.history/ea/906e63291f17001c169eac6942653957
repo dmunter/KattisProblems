@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class SMILOptimal {
+	public static void main(String[] args)
+		String input = sc.nextLine();
+		ArrayList<Integer> set = New ArrayList<>();
+		String[] face = {":)",":-)",";)",";-)"};
+		
+		for(String f: face) {
+			
+		}
+}

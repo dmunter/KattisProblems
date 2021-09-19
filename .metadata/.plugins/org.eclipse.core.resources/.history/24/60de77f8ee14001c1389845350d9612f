@@ -1,0 +1,62 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class SMIL {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String input = sc.next();
+		
+		ArrayList<Integer> arrFinal = new ArrayList<>();
+		char arr[] =  new char[input.length()];	
+	
+		for(int i =0; i < input.length();i++ ) {
+			arr[i] = input.charAt(i);		
+		}
+		//arrFinal index increamentor
+		int index=0;
+		for(int it = 0; it < arr.length; it++) {		
+			outerloop:				
+			if(arr.length > it && arr[it] == ':') { 
+				index = it;
+				if(arr.length > it+1 && arr[it +1] == '-' ) {
+					it++;
+					if (arr.length > it +1 && arr[it + 1 ] == ')'){
+						//arrFinal[index] = index;
+						//index=-1;
+						System.out.println(index);
+						it++;			
+					}
+				break outerloop;	
+				}
+				if(arr.length > it+1 && arr[it + 1 ] == ')' ){
+					System.out.println(it);
+					index++;
+					it++;
+				}
+			}
+		outerloop2:				
+			if(arr.length > it && arr[it] == ';') { 
+				index = it;
+				if(arr.length > it+1 && arr[it +1] == '-' ) {
+					it++;
+					if (arr.length > it +1 && arr[it + 1 ] == ')'){
+						//arrFinal[index] = index;
+						//index=-1;
+						System.out.println(index);
+						it++;			
+					}
+				break outerloop2;	
+				}
+				if(arr.length > it+1 && arr[it + 1 ] == ')' ){
+					System.out.println(it);
+					index++;
+					it++;
+				}
+			}		
+		}
+
+		
+				
+	}
+	
+}

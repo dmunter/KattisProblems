@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class OptimalSMIL {
+	
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			String input = sc.nextLine();
+			
+			ArrayList <Integer> set = new ArrayList<>();
+			String[] face = {":)",":-)",";)",";-)"};	
+/*
+			for(String f: face) {
+				int ind= 0;
+					while(ind<input.length()) {
+						idx = input.index(f, idx );
+						
+					}
+			}
+			*/
+			System.out.print(input.indexOf(":)"));
+		}
+
+}

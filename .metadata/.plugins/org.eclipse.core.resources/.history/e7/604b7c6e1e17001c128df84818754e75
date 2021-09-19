@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SMILOptimal {
+
+
+
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			ArrayList<Integer> set = new ArrayList<>();
+			
+			String input = sc.nextLine();
+			String [] face = {":)",":-)",";)",";-)"};
+			/*
+			for(String f: face) {
+				int idx=0;
+				while(idx input.length()) {
+					idx = input.indexOf(f, idx)+1;
+					System.out.print(idx);
+					
+				}
+				
+					
+			}*/
+			String myStr = "planet earth, you are a great ";
+			System.out.println(myStr.lastIndexOf("planet") );
+			
+
+		}
+}
